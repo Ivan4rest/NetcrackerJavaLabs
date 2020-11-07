@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb579c65-73ae-4439-9bd4-7cc32f262b0a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jsGq4Rg2bx1e078HXzvGdQkCVj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WiredInternetContractTest.GetContractByIdTest">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DigitalTVContractTest.GetContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetcrackerProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DigitalTVContractTest" />
+      <option name="METHOD_NAME" value="GetContractByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobilePhoneContractTest.GetContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetcrackerProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MobilePhoneContractTest" />
+      <option name="METHOD_NAME" value="GetContractByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WiredInternetContractTest.AddContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetcrackerProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WiredInternetContractTest" />
+      <option name="METHOD_NAME" value="AddContractTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WiredInternetContractTest.DeleteContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetcrackerProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WiredInternetContractTest" />
+      <option name="METHOD_NAME" value="DeleteContractByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WiredInternetContractTest.GetContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetcrackerProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WiredInternetContractTest" />
+      <option name="METHOD_NAME" value="GetContractByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WiredInternetContractTest.GetContractByIdTest" />
+        <item itemvalue="JUnit.WiredInternetContractTest.AddContractTest" />
+        <item itemvalue="JUnit.DigitalTVContractTest.GetContractByIdTest" />
+        <item itemvalue="JUnit.MobilePhoneContractTest.GetContractByIdTest" />
+        <item itemvalue="JUnit.WiredInternetContractTest.DeleteContractByIdTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb579c65-73ae-4439-9bd4-7cc32f262b0a" name="Default Changelist" comment="" />
+      <created>1604585575002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604585575002</updated>
+      <workItem from="1604585576502" duration="26444000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1604586656109">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1604586656109" />
+    <state x="93" y="93" width="1095" height="504" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604775471738">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.689@0.0.1280.689" timestamp="1604775471738" />
+    <state x="446" y="52" key="#com.intellij.ide.util.MemberChooser" timestamp="1604779670066">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="446" y="52" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1604779670066" />
+    <state x="465" y="265" key="Github.CreateGistDialog" timestamp="1604782580636">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="465" y="265" key="Github.CreateGistDialog/0.0.1280.689@0.0.1280.689" timestamp="1604782580636" />
+    <state width="1237" height="19" key="GridCell.Tab.0.bottom" timestamp="1604782716504">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="19" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
+    <state width="1237" height="19" key="GridCell.Tab.0.center" timestamp="1604782716504">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="19" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
+    <state width="1237" height="19" key="GridCell.Tab.0.left" timestamp="1604782716504">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="19" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
+    <state width="1237" height="19" key="GridCell.Tab.0.right" timestamp="1604782716504">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="19" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1604772722545">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.689@0.0.1280.689" timestamp="1604772722545" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1604586731402">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1604586731402" />
+    <state width="648" height="687" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1604775450094">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="648" height="687" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1280.689@0.0.1280.689" timestamp="1604775450094" />
+    <state x="412" y="59" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604776444640">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="412" y="59" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.689@0.0.1280.689" timestamp="1604776444640" />
+  </component>
+</project>
