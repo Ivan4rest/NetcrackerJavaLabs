@@ -5,7 +5,6 @@ public class MobilePhoneContract extends Contract{
     private int numberOfMinutes;
     private int numberOfSMS;
     private int amountOfTraffic;
-    public static ArrayList<MobilePhoneContract> contracts = new ArrayList<MobilePhoneContract>();
 
     public MobilePhoneContract(int id, Calendar startDate, Calendar endDate, int number, Person owner,
                                int numberOfMinutes, int numberOfSMS, int amountOfTraffic){
@@ -67,39 +66,4 @@ public class MobilePhoneContract extends Contract{
         return this.amountOfTraffic;
     }
 
-    /**
-     * Add contract
-     * @param contract
-     */
-    public static void AddContract(MobilePhoneContract contract){
-        contracts.add(contract);
-    }
-
-    /**
-     * Get contract by id
-     * @param id
-     * @return
-     */
-    public static MobilePhoneContract GetContractById(int id){
-        int index = 0;
-        for(int i = 0; i < contracts.size(); i++){
-            if(contracts.get(i).GetId() == id){
-                index = i;
-            }
-        }
-        return contracts.get(index);
-    }
-
-    /**
-     * Delete contract by id
-     * @param id
-     */
-    public static void DeleteContractById(int id){
-        for(int i = 0; i < contracts.size(); i++){
-            if(contracts.get(i).GetId() == id){
-                contracts.remove(i);
-                break;
-            }
-        }
-    }
 }

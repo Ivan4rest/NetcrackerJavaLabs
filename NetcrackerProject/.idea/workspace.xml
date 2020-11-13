@@ -32,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -71,65 +71,62 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WiredInternetContractTest.GetContractByIdTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RepositoryTest">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DigitalTVContractTest.GetContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DigitalTVContractTest" />
-      <option name="METHOD_NAME" value="GetContractByIdTest" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.AddArrayOfContractsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetcrackerProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="METHOD_NAME" value="AddArrayOfContractsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobilePhoneContractTest.GetContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.AddOneContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MobilePhoneContractTest" />
-      <option name="METHOD_NAME" value="GetContractByIdTest" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="METHOD_NAME" value="AddOneContractTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WiredInternetContractTest.AddContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.DeleteByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WiredInternetContractTest" />
-      <option name="METHOD_NAME" value="AddContractTest" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="METHOD_NAME" value="DeleteByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WiredInternetContractTest.DeleteContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.GetByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WiredInternetContractTest" />
-      <option name="METHOD_NAME" value="DeleteContractByIdTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WiredInternetContractTest.GetContractByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NetcrackerProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WiredInternetContractTest" />
-      <option name="METHOD_NAME" value="GetContractByIdTest" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="METHOD_NAME" value="GetByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WiredInternetContractTest.GetContractByIdTest" />
-        <item itemvalue="JUnit.WiredInternetContractTest.AddContractTest" />
-        <item itemvalue="JUnit.DigitalTVContractTest.GetContractByIdTest" />
-        <item itemvalue="JUnit.MobilePhoneContractTest.GetContractByIdTest" />
-        <item itemvalue="JUnit.WiredInternetContractTest.DeleteContractByIdTest" />
+        <item itemvalue="JUnit.RepositoryTest" />
+        <item itemvalue="JUnit.RepositoryTest.DeleteByIdTest" />
+        <item itemvalue="JUnit.RepositoryTest.GetByIdTest" />
+        <item itemvalue="JUnit.RepositoryTest.AddArrayOfContractsTest" />
+        <item itemvalue="JUnit.RepositoryTest.AddOneContractTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +152,7 @@
       <updated>1604585575002</updated>
       <workItem from="1604585576502" duration="26444000" />
       <workItem from="1604786272983" duration="40000" />
+      <workItem from="1605129641021" duration="11925000" />
     </task>
     <servers />
   </component>
@@ -171,6 +169,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="121" y="0" key="#Project_Structure" timestamp="1604586656109">
@@ -189,22 +188,22 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="465" y="265" key="Github.CreateGistDialog/0.0.1280.689@0.0.1280.689" timestamp="1604782580636" />
-    <state width="1237" height="19" key="GridCell.Tab.0.bottom" timestamp="1604782716504">
+    <state width="1237" height="80" key="GridCell.Tab.0.bottom" timestamp="1605142342181">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="19" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
-    <state width="1237" height="19" key="GridCell.Tab.0.center" timestamp="1604782716504">
+    <state width="1237" height="80" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1605142342181" />
+    <state width="1237" height="80" key="GridCell.Tab.0.center" timestamp="1605142342181">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="19" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
-    <state width="1237" height="19" key="GridCell.Tab.0.left" timestamp="1604782716504">
+    <state width="1237" height="80" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1605142342181" />
+    <state width="1237" height="80" key="GridCell.Tab.0.left" timestamp="1605142342181">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="19" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
-    <state width="1237" height="19" key="GridCell.Tab.0.right" timestamp="1604782716504">
+    <state width="1237" height="80" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1605142342181" />
+    <state width="1237" height="80" key="GridCell.Tab.0.right" timestamp="1605142342181">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="19" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1604782716504" />
+    <state width="1237" height="80" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1605142342181" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1604772722545">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -217,9 +216,9 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="648" height="687" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1280.689@0.0.1280.689" timestamp="1604775450094" />
-    <state x="412" y="59" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604776444640">
+    <state x="412" y="59" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605135426621">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="412" y="59" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.689@0.0.1280.689" timestamp="1604776444640" />
+    <state x="412" y="59" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.689@0.0.1280.689" timestamp="1605135426621" />
   </component>
 </project>
