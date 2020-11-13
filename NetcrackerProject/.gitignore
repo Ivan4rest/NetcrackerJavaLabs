@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../../../:\Users\fores\Desktop\NetcrackerJavaLabs\NetcrackerProject\.idea
+\.idea
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
