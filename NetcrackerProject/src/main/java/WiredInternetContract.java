@@ -1,23 +1,22 @@
-import java.util.ArrayList;
 import java.util.Calendar;
 
 public class WiredInternetContract extends Contract{
     private int connectionSpeed;
 
     public WiredInternetContract(int id, Calendar startDate, Calendar endDate, int number, Person owner, int connectionSpeed){
-        SetId(id);
-        SetStartDate(startDate);
-        SetEndDate(endDate);
-        SetNumber(number);
-        SetOwner(owner);
-        SetConnectionSpeed(connectionSpeed);
+        setId(id);
+        setStartDate(startDate);
+        setEndDate(endDate);
+        setNumber(number);
+        setOwner(owner);
+        setConnectionSpeed(connectionSpeed);
     }
 
     /**
      * Setter for connectionSpeed
      * @param connectionSpeed
      */
-    public void SetConnectionSpeed(int connectionSpeed){
+    public void setConnectionSpeed(int connectionSpeed){
         this.connectionSpeed = connectionSpeed;
     }
 
@@ -25,7 +24,7 @@ public class WiredInternetContract extends Contract{
      * Getter for connectionSpeed
      * @return
      */
-    public int GetConnectionSpeed(){
+    public int getConnectionSpeed(){
         return this.connectionSpeed;
     }
 

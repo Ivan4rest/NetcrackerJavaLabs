@@ -9,18 +9,18 @@ public class Person {
     int passportSeriesAndNumber;
 
     public Person(int id, String fio, Calendar birthDate, Gender gender, int passportSeriesAndNumber){
-        SetId(id);
-        SetFio(fio);
-        SetBirthDate(birthDate);
-        SetGender(gender);
-        SetPassportSeriesAndNumber(passportSeriesAndNumber);
+        setId(id);
+        setFio(fio);
+        setBirthDate(birthDate);
+        setGender(gender);
+        setPassportSeriesAndNumber(passportSeriesAndNumber);
     }
 
     /**
      * Setter for id
      * @param id
      */
-    private void SetId(int id){
+    private void setId(int id){
         this.id = id;
     }
 
@@ -28,7 +28,7 @@ public class Person {
      * Getter for id
      * @return
      */
-    public int GetId(){
+    public int getId(){
         return this.id;
     }
 
@@ -36,7 +36,7 @@ public class Person {
      * Setter for fio
      * @param fio
      */
-    public void SetFio(String fio){
+    public void setFio(String fio){
         this.fio = fio;
     }
 
@@ -44,7 +44,7 @@ public class Person {
      * Getter for fio
      * @return
      */
-    public String GetFio(){
+    public String getFio(){
         return this.fio;
     }
 
@@ -52,7 +52,7 @@ public class Person {
      * Setter for birthDate
      * @param birthDate
      */
-    public void SetBirthDate(Calendar birthDate){
+    public void setBirthDate(Calendar birthDate){
         this.birthDate = birthDate;
     }
 
@@ -60,7 +60,7 @@ public class Person {
      * Getter for birthDate
      * @return
      */
-    public Calendar GetBirthDate(){
+    public Calendar getBirthDate(){
         return this.birthDate;
     }
 
@@ -68,7 +68,7 @@ public class Person {
      * Setter for gender
      * @param gender
      */
-    public void SetGender(Gender gender){
+    public void setGender(Gender gender){
         this.gender = gender;
     }
 
@@ -76,7 +76,7 @@ public class Person {
      * Getter for gender
      * @return
      */
-    public Gender GetGender(){
+    public Gender getGender(){
         return this.gender;
     }
 
@@ -84,7 +84,7 @@ public class Person {
      * Setter for passportSeriesAndNumber
      * @param passportSeriesAndNumber
      */
-    public void SetPassportSeriesAndNumber(int passportSeriesAndNumber){
+    public void setPassportSeriesAndNumber(int passportSeriesAndNumber){
         this.passportSeriesAndNumber = passportSeriesAndNumber;
     }
 
@@ -92,7 +92,7 @@ public class Person {
      * Getter for passportSeriesAndNumber
      * @return
      */
-    public int GetPassportSeriesAndNumber(){
+    public int getPassportSeriesAndNumber(){
         return this.passportSeriesAndNumber;
     }
 
@@ -100,13 +100,13 @@ public class Person {
      * Get the age of a person
      * @return
      */
-    public int GetAge(){
+    public int getAge(){
         Calendar rightNow = Calendar.getInstance();
-        if (rightNow.get(Calendar.DAY_OF_YEAR) >= GetBirthDate().get(Calendar.DAY_OF_YEAR)){
-            return rightNow.get(Calendar.YEAR) - GetBirthDate().get(Calendar.YEAR);
+        if (rightNow.get(Calendar.DAY_OF_YEAR) >= getBirthDate().get(Calendar.DAY_OF_YEAR)){
+            return rightNow.get(Calendar.YEAR) - getBirthDate().get(Calendar.YEAR);
         }
         else{
-            return rightNow.get(Calendar.YEAR) - GetBirthDate().get(Calendar.YEAR) - 1;
+            return rightNow.get(Calendar.YEAR) - getBirthDate().get(Calendar.YEAR) - 1;
         }
     }
 }

@@ -72,13 +72,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.RepositoryTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,41 +94,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryTest.AddArrayOfContractsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.addArrayOfContractsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
-      <option name="METHOD_NAME" value="AddArrayOfContractsTest" />
+      <option name="METHOD_NAME" value="addArrayOfContractsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryTest.AddOneContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.addOneContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
-      <option name="METHOD_NAME" value="AddOneContractTest" />
+      <option name="METHOD_NAME" value="addOneContractTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryTest.DeleteByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.deleteByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
-      <option name="METHOD_NAME" value="DeleteByIdTest" />
+      <option name="METHOD_NAME" value="deleteByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryTest.GetByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.getByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetcrackerProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
-      <option name="METHOD_NAME" value="GetByIdTest" />
+      <option name="METHOD_NAME" value="getByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,10 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RepositoryTest" />
-        <item itemvalue="JUnit.RepositoryTest.DeleteByIdTest" />
-        <item itemvalue="JUnit.RepositoryTest.GetByIdTest" />
-        <item itemvalue="JUnit.RepositoryTest.AddArrayOfContractsTest" />
-        <item itemvalue="JUnit.RepositoryTest.AddOneContractTest" />
+        <item itemvalue="JUnit.RepositoryTest.deleteByIdTest" />
+        <item itemvalue="JUnit.RepositoryTest.getByIdTest" />
+        <item itemvalue="JUnit.RepositoryTest.addArrayOfContractsTest" />
+        <item itemvalue="JUnit.RepositoryTest.addOneContractTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +155,7 @@
       <workItem from="1604585576502" duration="26444000" />
       <workItem from="1604786272983" duration="40000" />
       <workItem from="1605129641021" duration="11925000" />
+      <workItem from="1605625279144" duration="620000" />
     </task>
     <servers />
   </component>

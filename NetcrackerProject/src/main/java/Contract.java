@@ -14,7 +14,7 @@ public abstract class Contract {
      * Setter for id
      * @param id
      */
-    public void SetId(int id){
+    public void setId(int id){
         this.id = id;
     }
 
@@ -22,7 +22,7 @@ public abstract class Contract {
      * Getter for id
      * @return
      */
-    public int GetId(){
+    public int getId(){
         return this.id;
     }
 
@@ -30,7 +30,7 @@ public abstract class Contract {
      * Setter for startDate
      * @param startDate
      */
-    public void SetStartDate(Calendar startDate){
+    public void setStartDate(Calendar startDate){
         this.startDate = startDate;
     }
 
@@ -38,7 +38,7 @@ public abstract class Contract {
      * Getter for startDate
      * @return
      */
-    public Calendar GetStartDate(){
+    public Calendar getStartDate(){
         return this.startDate;
     }
 
@@ -46,7 +46,7 @@ public abstract class Contract {
      * Setter for endDate
      * @param endDate
      */
-    public void SetEndDate(Calendar endDate){
+    public void setEndDate(Calendar endDate){
         this.endDate = endDate;
     }
 
@@ -54,7 +54,7 @@ public abstract class Contract {
      * Getter for endDate
      * @return
      */
-    public Calendar GetEndDate(){
+    public Calendar getEndDate(){
         return this.endDate;
     }
 
@@ -62,7 +62,7 @@ public abstract class Contract {
      * Setter for number
      * @param number
      */
-    public void SetNumber(int number){
+    public void setNumber(int number){
         this.number = number;
     }
 
@@ -70,7 +70,7 @@ public abstract class Contract {
      * Getter for number
      * @return
      */
-    public int GetNumber(){
+    public int getNumber(){
         return this.number;
     }
 
@@ -78,7 +78,7 @@ public abstract class Contract {
      * Setter for owner
      * @param owner
      */
-    public void SetOwner(Person owner){
+    public void setOwner(Person owner){
         this.owner = owner;
     }
 
@@ -86,7 +86,7 @@ public abstract class Contract {
      * Getter for owner
      * @return
      */
-    public Person GetOwner(){
+    public Person getOwner(){
         return this.owner;
     }
 }

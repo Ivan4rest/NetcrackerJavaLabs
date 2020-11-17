@@ -7,19 +7,19 @@ public class DigitalTVContract extends Contract{
     private ArrayList<String> channelPackage = new ArrayList<String>();
 
     public DigitalTVContract(int id, Calendar startDate, Calendar endDate, int number, Person owner, ArrayList<String> channelPackage){
-        SetId(id);
-        SetStartDate(startDate);
-        SetEndDate(endDate);
-        SetNumber(number);
-        SetOwner(owner);
-        SetChannelPackage(channelPackage);
+        setId(id);
+        setStartDate(startDate);
+        setEndDate(endDate);
+        setNumber(number);
+        setOwner(owner);
+        setChannelPackage(channelPackage);
     }
 
     /**
      * Setter for channelPackage
      * @param channelPackage
      */
-    public void SetChannelPackage(ArrayList<String> channelPackage){
+    public void setChannelPackage(ArrayList<String> channelPackage){
         this.channelPackage = channelPackage;
     }
 
@@ -27,7 +27,7 @@ public class DigitalTVContract extends Contract{
      * Getter for channelPackage
      * @return
      */
-    public ArrayList<String> GetChannelPackage(){
+    public ArrayList<String> getChannelPackage(){
         return this.channelPackage;
     }
 

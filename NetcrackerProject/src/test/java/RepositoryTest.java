@@ -38,43 +38,43 @@ public class RepositoryTest {
     }
 
     @Test
-    public void AddOneContractTest() {
-        repository.Add(contract1);
-        repository.Add(contract2);
-        repository.Add(contract3);
-        repository.Add(contract4);
-        repository.Add(contract5);
-        repository.Add(contract6);
+    public void addOneContractTest() {
+        repository.add(contract1);
+        repository.add(contract2);
+        repository.add(contract3);
+        repository.add(contract4);
+        repository.add(contract5);
+        repository.add(contract6);
         Contract[] contracts = new Contract[]{contract1, contract2, contract3, contract4, contract5, contract6};
-        for(int i = 0; i < repository.GetLength(); i++){
-            assertEquals(repository.Get()[i], contracts[i]);
+        for(int i = 0; i < repository.getLength(); i++){
+            assertEquals(repository.get()[i], contracts[i]);
         }
     }
 
     @Test
-    public void AddArrayOfContractsTest() {
+    public void addArrayOfContractsTest() {
         Contract[] contracts = new Contract[]{contract1, contract2, contract3, contract4, contract5, contract6};
-        repository.Add(contracts);
-        for(int i = 0; i < repository.GetLength(); i++){
-            assertEquals(repository.Get()[i], contracts[i]);
+        repository.add(contracts);
+        for(int i = 0; i < repository.getLength(); i++){
+            assertEquals(repository.get()[i], contracts[i]);
         }
     }
 
     @Test
-    public void GetByIdTest() {
+    public void getByIdTest() {
         Contract[] contracts = new Contract[]{contract1, contract2, contract3, contract4, contract5, contract6};
-        repository.Add(contracts);
-        assertEquals(repository.GetById(1).GetId(), 1);
+        repository.add(contracts);
+        assertEquals(repository.getById(1).getId(), 1);
     }
 
     @Test
-    public void DeleteByIdTest() {
+    public void deleteByIdTest() {
         Contract[] contracts = new Contract[]{contract1, contract2, contract3, contract4, contract5, contract6};
-        repository.Add(contracts);
-        repository.DeleteById(3);
+        repository.add(contracts);
+        repository.deleteById(3);
         Contract[] contracts2 = new Contract[]{contract1, contract2, contract4, contract5, contract6};
-        for(int i = 0; i < repository.GetLength(); i++){
-            assertEquals(repository.Get()[i], contracts2[i]);
+        for(int i = 0; i < repository.getLength(); i++){
+            assertEquals(repository.get()[i], contracts2[i]);
         }
     }
 }

@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Calendar;
 
 public class MobilePhoneContract extends Contract{
@@ -8,21 +7,21 @@ public class MobilePhoneContract extends Contract{
 
     public MobilePhoneContract(int id, Calendar startDate, Calendar endDate, int number, Person owner,
                                int numberOfMinutes, int numberOfSMS, int amountOfTraffic){
-        SetId(id);
-        SetStartDate(startDate);
-        SetEndDate(endDate);
-        SetNumber(number);
-        SetOwner(owner);
-        SetNumberOfMinutes(numberOfMinutes);
-        SetNumberOfSMS(numberOfSMS);
-        SetAmountOfTraffic(amountOfTraffic);
+        setId(id);
+        setStartDate(startDate);
+        setEndDate(endDate);
+        setNumber(number);
+        setOwner(owner);
+        setNumberOfMinutes(numberOfMinutes);
+        setNumberOfSMS(numberOfSMS);
+        setAmountOfTraffic(amountOfTraffic);
     }
 
     /**
      * Setter for numberOfMinutes
      * @param numberOfMinutes
      */
-    public void SetNumberOfMinutes(int numberOfMinutes){
+    public void setNumberOfMinutes(int numberOfMinutes){
         this.numberOfMinutes = numberOfMinutes;
     }
 
@@ -30,7 +29,7 @@ public class MobilePhoneContract extends Contract{
      * Getter for numberOfMinutes
      * @return
      */
-    public int GetNumberOfMinutes(){
+    public int getNumberOfMinutes(){
         return this.numberOfMinutes;
     }
 
@@ -38,7 +37,7 @@ public class MobilePhoneContract extends Contract{
      * Setter for numberOfSMS
      * @param numberOfSMS
      */
-    public void SetNumberOfSMS(int numberOfSMS){
+    public void setNumberOfSMS(int numberOfSMS){
         this.numberOfSMS = numberOfSMS;
     }
 
@@ -46,7 +45,7 @@ public class MobilePhoneContract extends Contract{
      * Getter for numberOfSMS
      * @return
      */
-    public int GetNumberOfSMS(){
+    public int getNumberOfSMS(){
         return this.numberOfSMS;
     }
 
@@ -54,7 +53,7 @@ public class MobilePhoneContract extends Contract{
      * Setter for amountOfTraffic
      * @param amountOfTraffic
      */
-    public void SetAmountOfTraffic(int amountOfTraffic){
+    public void setAmountOfTraffic(int amountOfTraffic){
         this.amountOfTraffic = amountOfTraffic;
     }
 
@@ -62,7 +61,7 @@ public class MobilePhoneContract extends Contract{
      * Getter for amountOfTraffic
      * @return
      */
-    public int GetAmountOfTraffic(){
+    public int getAmountOfTraffic(){
         return this.amountOfTraffic;
     }
 
