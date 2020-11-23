@@ -1,3 +1,5 @@
+package com.Contracts;
+
 import java.util.Calendar;
 
 public class WiredInternetContract extends Contract{

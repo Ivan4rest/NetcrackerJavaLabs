@@ -1,6 +1,8 @@
+package com.Contracts;
+
 import java.util.Calendar;
 
-public abstract class Contract {
+public abstract class Contract{
     private int id;
     private Calendar startDate;
     private Calendar endDate;

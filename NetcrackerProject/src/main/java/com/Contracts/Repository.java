@@ -1,3 +1,10 @@
+package com.Contracts;
+
+import Sorters.ISorter;
+
+import java.util.Comparator;
+import java.util.function.Predicate;
+
 public class Repository {
     /**
      * Array containing contracts
@@ -122,5 +129,29 @@ public class Repository {
             }
             this.contracts = extendedArray;
         }
+    }
+
+    /**
+     * Array search with a condition
+     * @param condition
+     * @return
+     */
+    public Repository searchBy(Predicate<Contract> condition){
+        Repository repository = new Repository();
+        for(int i = 0; i < contracts.length; i++){
+            if(condition.test(get()[i])){
+                repository.add(get()[i]);
+            }
+        }
+        return repository;
+    }
+
+    /**
+     * Ascending sort
+     * @param comparator
+     * @param sorter
+     */
+    public void sortBy(Comparator<Contract> comparator, ISorter sorter){
+        sorter.sort(contracts, comparator);
     }
 }
