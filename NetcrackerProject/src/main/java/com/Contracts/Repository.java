@@ -96,16 +96,18 @@ public class Repository {
      * @param contract
      */
     public void add(Contract contract){
-        if((getLength() - 1) > lastIndex){
-            contracts[++lastIndex] = contract;
-        }
-        else{
-            Contract[] extendedArray = new Contract[getLength() + 1];
-            for(int i = 0; i < getLength(); i++){
-                extendedArray[i] = contracts[i];
+        if(contract != null){
+            if((getLength() - 1) > lastIndex){
+                contracts[++lastIndex] = contract;
             }
-            extendedArray[++lastIndex] = contract;
-            contracts = extendedArray;
+            else{
+                Contract[] extendedArray = new Contract[getLength() + 1];
+                for(int i = 0; i < getLength(); i++){
+                    extendedArray[i] = contracts[i];
+                }
+                extendedArray[++lastIndex] = contract;
+                contracts = extendedArray;
+            }
         }
     }
 
@@ -116,7 +118,9 @@ public class Repository {
     public void add(Contract[] contracts){
         if((getLength() - (lastIndex + 1)) > contracts.length){
             for(int i = 0; i < contracts.length; i++){
-                this.contracts[++lastIndex] = contracts[i];
+                if(contracts[i] != null){
+                    this.contracts[++lastIndex] = contracts[i];
+                }
             }
         }
         else{
@@ -125,7 +129,9 @@ public class Repository {
                 extendedArray[i] = this.contracts[i];
             }
             for(int i = 0; i < contracts.length; i++){
-                extendedArray[++lastIndex] = contracts[i];
+                if(contracts[i] != null) {
+                    extendedArray[++lastIndex] = contracts[i];
+                }
             }
             this.contracts = extendedArray;
         }

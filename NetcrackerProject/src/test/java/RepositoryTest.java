@@ -7,14 +7,13 @@ import com.Contracts.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.function.Predicate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class RepositoryTest {
+public class  RepositoryTest {
     Repository repository;
     Calendar date1;
     Calendar date2;
@@ -27,7 +26,7 @@ public class RepositoryTest {
     MobilePhoneContract contract2;
     WiredInternetContract contract3;
     WiredInternetContract contract4;
-    ArrayList<String> channelPackage;
+    String[] channelPackage = new String[]{"HBO", "FOX", "abc", "NBC", "CNN"};
     DigitalTVContract contract5;
     DigitalTVContract contract6;
     IdComparator idComparator;
@@ -50,9 +49,6 @@ public class RepositoryTest {
         contract2 = new MobilePhoneContract(2, date1, date2, 12334, person1, 5, 5, 5);
         contract3 = new WiredInternetContract(3, date3, date4, 12334, person1, 5);
         contract4 = new WiredInternetContract(4, date5, date4, 12334, person1, 5);
-        channelPackage = new ArrayList<String>();
-        channelPackage.add("HBO");
-        channelPackage.add("FOX");
         contract5 = new DigitalTVContract(5, date1, date4, 12334, person1, channelPackage);
         contract6 = new DigitalTVContract(6, date1, date2, 12334, person1, channelPackage);
         idComparator = new IdComparator();

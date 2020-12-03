@@ -1,14 +1,13 @@
 package com.Contracts;
 
 import java.lang.String;
-import java.util.ArrayList;
 import java.util.Calendar;
 
 public class DigitalTVContract extends Contract{
 
-    private ArrayList<String> channelPackage = new ArrayList<String>();
+    private String[] channelPackage;
 
-    public DigitalTVContract(int id, Calendar startDate, Calendar endDate, int number, Person owner, ArrayList<String> channelPackage){
+    public DigitalTVContract(int id, Calendar startDate, Calendar endDate, int number, Person owner, String[] channelPackage){
         setId(id);
         setStartDate(startDate);
         setEndDate(endDate);
@@ -21,7 +20,7 @@ public class DigitalTVContract extends Contract{
      * Setter for channelPackage
      * @param channelPackage
      */
-    public void setChannelPackage(ArrayList<String> channelPackage){
+    public void setChannelPackage(String[] channelPackage){
         this.channelPackage = channelPackage;
     }
 
@@ -29,7 +28,7 @@ public class DigitalTVContract extends Contract{
      * Getter for channelPackage
      * @return
      */
-    public ArrayList<String> getChannelPackage(){
+    public String[] getChannelPackage(){
         return this.channelPackage;
     }
 
