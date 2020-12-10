@@ -2,6 +2,7 @@ package com.Contracts;
 
 import java.lang.String;
 import java.util.Calendar;
+import java.util.Objects;
 
 public class Person {
     int id;
@@ -110,5 +111,27 @@ public class Person {
         else{
             return rightNow.get(Calendar.YEAR) - getBirthDate().get(Calendar.YEAR) - 1;
         }
+    }
+
+    /**
+     * 
+     * @param o
+     * @return
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id &&
+                passportSeriesAndNumber == person.passportSeriesAndNumber &&
+                Objects.equals(fio, person.fio) &&
+                Objects.equals(birthDate, person.birthDate) &&
+                gender == person.gender;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, fio, birthDate, gender, passportSeriesAndNumber);
     }
 }

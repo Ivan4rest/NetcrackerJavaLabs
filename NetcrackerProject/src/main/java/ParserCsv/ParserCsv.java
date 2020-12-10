@@ -28,13 +28,15 @@ public class ParserCsv {
     private static final int GENDER_INDEX = 3;
     private static final int PASSPORT_SERIES_AND_NUMBER_INDEX = 4;
 
+    static List<Person> persons = new ArrayList<>();
+
     /**
      *Reading from a file line by line
      * @param fileName
      * @return
      * @throws IOException
      */
-    public static List<String> read(final String fileName) throws IOException {
+    private static List<String> read(final String fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         List<String> lines = new ArrayList<String>();
         String line;
@@ -75,8 +77,18 @@ public class ParserCsv {
             else{
                 gender = null;
             }
-            Person person = new Person(Integer.parseInt(subStrPerson[PERSON_ID_INDEX]), subStrPerson[FIO_INDEX],
-                                        birthDate, gender, Integer.parseInt(subStrPerson[PASSPORT_SERIES_AND_NUMBER_INDEX]));
+            Person person = null;
+            for(int j = 0; j < persons.size(); j++){
+                if(persons.get(j).equals(new Person(Integer.parseInt(subStrPerson[PERSON_ID_INDEX]), subStrPerson[FIO_INDEX],
+                        birthDate, gender, Integer.parseInt(subStrPerson[PASSPORT_SERIES_AND_NUMBER_INDEX])))){
+                    person = persons.get(j);
+                }
+            }
+            if(person == null){
+                person = new Person(Integer.parseInt(subStrPerson[PERSON_ID_INDEX]), subStrPerson[FIO_INDEX],
+                        birthDate, gender, Integer.parseInt(subStrPerson[PASSPORT_SERIES_AND_NUMBER_INDEX]));
+                persons.add(person);
+            }
             switch(subStrContract[TYPE_CONTRACT_INDEX]){
                 case "Mobile phone":
                     contract = new MobilePhoneContract(Integer.parseInt(subStrContract[CONTRACT_ID_INDEX]),
