@@ -1,6 +1,8 @@
 package ParserCsv;
 
+import Validators.*;
 import com.Contracts.*;
+import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,6 +12,8 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ParserCsv {
+    private static Logger logger = Logger.getLogger(ParserCsv.class);
+
     private static final int CONTRACT_ID_INDEX = 0;
     private static final int START_DATE_INDEX = 1;
     private static final int END_DATE_INDEX = 2;
@@ -29,6 +33,18 @@ public class ParserCsv {
     private static final int PASSPORT_SERIES_AND_NUMBER_INDEX = 4;
 
     static List<Person> persons = new ArrayList<>();
+
+    static List<Message> messages = new ArrayList<Message>();
+    static List<ContractValidator> validators = new ArrayList<ContractValidator>();
+    static{
+        validators.add(new OwnerValidator());
+        validators.add(new ContractNumberValidator());
+        validators.add(new NumberOfMinutesValidator());
+        validators.add(new NumberOfSMSValidator());
+        validators.add(new AmountOfTrafficValidator());
+        validators.add(new ConnectionSpeedValidator());
+    }
+
 
     /**
      *Reading from a file line by line
@@ -55,6 +71,7 @@ public class ParserCsv {
      * @throws ParseException
      */
     public static Repository parse(final String fileName, Repository repository) throws IOException, ParseException {
+        logger.info("Parse data from csv file started");
         List<String> lines = read(fileName);
         for(int i = 0; i < lines.size(); i++){
             String[] subStrContract = lines.get(i).split(";");
@@ -118,8 +135,26 @@ public class ParserCsv {
                     contract = null;
                     break;
             }
+            Message message = validate(contract);
+            messages.add(message);
             repository.add(contract);
         }
         return repository;
+    }
+
+    /**
+     * Contract validation
+     * @param contract
+     * @return
+     */
+    public static Message validate(Contract contract){
+        logger.info("Validate started");
+        List<Message> messages = new ArrayList<Message>();
+        for (int i = 0; i < validators.size(); i++) {
+            if(validators.get(i).validate(contract) != null){
+                messages.add(validators.get(i).validate(contract));
+            }
+        }
+        return  new Message(messages);
     }
 }

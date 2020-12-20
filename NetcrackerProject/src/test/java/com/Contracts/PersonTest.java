@@ -1,3 +1,5 @@
+package com.Contracts;
+
 import com.Contracts.Gender;
 import com.Contracts.Person;
 import org.junit.jupiter.api.Test;

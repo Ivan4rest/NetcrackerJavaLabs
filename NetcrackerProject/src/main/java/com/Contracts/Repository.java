@@ -1,11 +1,14 @@
 package com.Contracts;
 
 import Sorters.ISorter;
+import org.apache.log4j.Logger;
 
 import java.util.Comparator;
 import java.util.function.Predicate;
 
 public class Repository {
+    private static Logger logger = Logger.getLogger(Repository.class);
+
     /**
      * Array containing contracts
      */
@@ -20,6 +23,7 @@ public class Repository {
      * Constructor, setting array's length 0
      */
     public Repository(){
+        logger.info("Created new repository");
         contracts = new Contract[0];
     }
 
@@ -67,6 +71,7 @@ public class Repository {
      * @param id
      */
     public void deleteById(int id){
+        logger.info("Contract deleted by id from repository");
         Contract[] truncatedArray = new Contract[getLength() - 1];
         for(int i = 0; i <= lastIndex; i++){
             if(i == lastIndex){
@@ -96,6 +101,7 @@ public class Repository {
      * @param contract
      */
     public void add(Contract contract){
+        logger.info("Added new contract to repository");
         if(contract != null){
             if((getLength() - 1) > lastIndex){
                 contracts[++lastIndex] = contract;
@@ -116,6 +122,7 @@ public class Repository {
      * @param contracts
      */
     public void add(Contract[] contracts){
+        logger.info("Added new contracts to repository");
         if((getLength() - (lastIndex + 1)) > contracts.length){
             for(int i = 0; i < contracts.length; i++){
                 if(contracts[i] != null){
