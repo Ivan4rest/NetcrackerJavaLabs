@@ -3,9 +3,10 @@ package com.Contracts;
 import Comparators.EndDateComparator;
 import Comparators.IdComparator;
 import Comparators.StartDateComparator;
+import Exceptions.ReflectionException;
+import Reflection.Injector;
 import Sorters.BubbleSorter;
 import Sorters.SelectionSorter;
-import com.Contracts.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -119,66 +120,36 @@ public class  RepositoryTest {
     }
 
     @Test
-    public void BubbleSortByIdTest() {
+    public void SortByIdTest() throws ReflectionException {
         Contract[] contracts = new Contract[]{contract4, contract5, contract6, contract1, contract2, contract3};
         Contract[] contracts2 = new Contract[]{contract1, contract2, contract3, contract4, contract5, contract6};
+        repository = Injector.inject(repository);
         repository.add(contracts);
-        repository.sortBy(idComparator, bubbleSorter);
+        repository.sortBy(idComparator);
         for(int i = 0; i < repository.getLength(); i++){
             assertEquals(repository.get()[i], contracts2[i]);
         }
     }
 
     @Test
-    public void BubbleSortByStartDateTest() {
+    public void SortByStartDateTest() throws ReflectionException {
         Contract[] contracts = new Contract[]{contract3, contract2, contract1};
         Contract[] contracts2 = new Contract[]{contract1, contract3, contract2};
+        repository = Injector.inject(repository);
         repository.add(contracts);
-        repository.sortBy(startDateComparator, bubbleSorter);
+        repository.sortBy(startDateComparator);
         for(int i = 0; i < repository.getLength(); i++){
             assertEquals(repository.get()[i], contracts2[i]);
         }
     }
 
     @Test
-    public void BubbleSortByEndDateTest() {
+    public void SortByEndDateTest() throws ReflectionException {
         Contract[] contracts = new Contract[]{contract1, contract3, contract2};
         Contract[] contracts2 = new Contract[]{contract3, contract2, contract1};
+        repository = Injector.inject(repository);
         repository.add(contracts);
-        repository.sortBy(endDateComparator, bubbleSorter);
-        for(int i = 0; i < repository.getLength(); i++){
-            assertEquals(repository.get()[i], contracts2[i]);
-        }
-    }
-
-    @Test
-    public void SelectionSortByIdTest() {
-        Contract[] contracts = new Contract[]{contract4, contract5, contract6, contract1, contract2, contract3};
-        Contract[] contracts2 = new Contract[]{contract1, contract2, contract3, contract4, contract5, contract6};
-        repository.add(contracts);
-        repository.sortBy(idComparator, selectionSorter);
-        for(int i = 0; i < repository.getLength(); i++){
-            assertEquals(repository.get()[i], contracts2[i]);
-        }
-    }
-
-    @Test
-    public void SelectionSortByStartDateTest() {
-        Contract[] contracts = new Contract[]{contract3, contract2, contract1};
-        Contract[] contracts2 = new Contract[]{contract1, contract3, contract2};
-        repository.add(contracts);
-        repository.sortBy(startDateComparator, selectionSorter);
-        for(int i = 0; i < repository.getLength(); i++){
-            assertEquals(repository.get()[i], contracts2[i]);
-        }
-    }
-
-    @Test
-    public void SelectionSortByEndDateTest() {
-        Contract[] contracts = new Contract[]{contract1, contract3, contract2};
-        Contract[] contracts2 = new Contract[]{contract3, contract2, contract1};
-        repository.add(contracts);
-        repository.sortBy(endDateComparator, selectionSorter);
+        repository.sortBy(endDateComparator);
         for(int i = 0; i < repository.getLength(); i++){
             assertEquals(repository.get()[i], contracts2[i]);
         }

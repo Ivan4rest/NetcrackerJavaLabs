@@ -1,5 +1,6 @@
 package ParserCsv;
 
+import Reflection.AutoInjectable;
 import Validators.*;
 import com.Contracts.*;
 import org.apache.log4j.Logger;
@@ -35,16 +36,9 @@ public class ParserCsv {
     static List<Person> persons = new ArrayList<>();
 
     static List<Message> messages = new ArrayList<Message>();
-    static List<ContractValidator> validators = new ArrayList<ContractValidator>();
-    static{
-        validators.add(new OwnerValidator());
-        validators.add(new ContractNumberValidator());
-        validators.add(new NumberOfMinutesValidator());
-        validators.add(new NumberOfSMSValidator());
-        validators.add(new AmountOfTrafficValidator());
-        validators.add(new ConnectionSpeedValidator());
-    }
 
+    @AutoInjectable(clazz = ContractValidator.class)
+    static List<ContractValidator> validators;
 
     /**
      *Reading from a file line by line

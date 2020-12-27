@@ -1,5 +1,7 @@
 package ParserCsv;
 
+import Exceptions.ReflectionException;
+import Reflection.Injector;
 import com.Contracts.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -74,9 +76,11 @@ class ParserCsvTest {
     }
 
     @Test
-    void parseTest() throws IOException, ParseException {
+    void parseTest() throws IOException, ParseException, ReflectionException {
         Contract[] contracts = new Contract[]{contract1, contract2, contract3, contract4, contract5};
         repository1.add(contracts);
+        ParserCsv parserCsv = new ParserCsv();
+        parserCsv = Injector.inject(parserCsv);
         repository2 = ParserCsv.parse("src/main/resources/contracts.csv", repository2);
         assertEquals(repository1.getLength(), repository2.getLength());
         for(int i = 0; i < repository1.getLength(); i++){

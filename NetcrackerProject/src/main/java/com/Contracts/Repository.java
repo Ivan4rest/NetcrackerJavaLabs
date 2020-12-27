@@ -1,5 +1,6 @@
 package com.Contracts;
 
+import Reflection.AutoInjectable;
 import Sorters.ISorter;
 import org.apache.log4j.Logger;
 
@@ -8,6 +9,9 @@ import java.util.function.Predicate;
 
 public class Repository {
     private static Logger logger = Logger.getLogger(Repository.class);
+
+    @AutoInjectable
+    ISorter sorter;
 
     /**
      * Array containing contracts
@@ -162,9 +166,8 @@ public class Repository {
     /**
      * Ascending sort
      * @param comparator
-     * @param sorter
      */
-    public void sortBy(Comparator<Contract> comparator, ISorter sorter){
+    public void sortBy(Comparator<Contract> comparator){
         sorter.sort(contracts, comparator);
     }
 }
