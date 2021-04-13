@@ -5,7 +5,6 @@ public class MultiplicationThreaded {
         Thread[] threads = new Thread[THREADS_COUNT];
         int per = (int) matrix1.length / THREADS_COUNT;
         int[][] matrixResult = new int[matrix1.length][matrix2[0].length];
-        long millis = System.currentTimeMillis();
 
         for(int i=0; i < THREADS_COUNT; i++){
             threads[i] = new MatrixMultiplicationThread(matrix1, matrix2, matrixResult,per * i, per * (i + 1));
@@ -18,6 +17,5 @@ public class MultiplicationThreaded {
                 System.out.println(e.getMessage());
             }
         }
-        System.out.println("Multi thread took " + (double) (System.currentTimeMillis() - millis));
     }
 }

@@ -18,7 +18,7 @@ public class MatrixMultiplicationThread extends Thread{
 
     @Override
     public void run() {
-        logger.info("Matrix multiplication started.");
+        logger.info("Matrix multiplication thread:" + getName() + " started");
         for (int i = begin; i < end; i++) {
             for (int j = 0; j < matrix2[0].length; j++) {
                 matrixOutput[i][j] = 0;
@@ -27,6 +27,6 @@ public class MatrixMultiplicationThread extends Thread{
                 }
             }
         }
-        logger.info("The matrices are multiplied.");
+        logger.info("Matrix multiplication thread:" + getName() + " complete");
     }
 }
