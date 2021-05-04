@@ -1,6 +1,8 @@
 package com.Contracts;
 
+import java.sql.Date;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public abstract class Contract{
     private int id;
@@ -37,6 +39,16 @@ public abstract class Contract{
     }
 
     /**
+     * Setter for startDate
+     * @param startDate
+     */
+    public void setStartDate(Date startDate){
+        Calendar calendar = new GregorianCalendar();
+        calendar.setTime(startDate);
+        this.startDate = calendar;
+    }
+
+    /**
      * Getter for startDate
      * @return
      */
@@ -50,6 +62,16 @@ public abstract class Contract{
      */
     public void setEndDate(Calendar endDate){
         this.endDate = endDate;
+    }
+
+    /**
+     * Setter for endDate
+     * @param endDate
+     */
+    public void setEndDate(Date endDate){
+        Calendar calendar = new GregorianCalendar();
+        calendar.setTime(endDate);
+        this.endDate = calendar;
     }
 
     /**

@@ -1,11 +1,21 @@
 package com.Contracts;
 
+import java.sql.Date;
 import java.util.Calendar;
 
 public class WiredInternetContract extends Contract{
     private int connectionSpeed;
 
     public WiredInternetContract(int id, Calendar startDate, Calendar endDate, int number, Person owner, int connectionSpeed){
+        setId(id);
+        setStartDate(startDate);
+        setEndDate(endDate);
+        setNumber(number);
+        setOwner(owner);
+        setConnectionSpeed(connectionSpeed);
+    }
+
+    public WiredInternetContract(int id, Date startDate, Date endDate, int number, Person owner, int connectionSpeed){
         setId(id);
         setStartDate(startDate);
         setEndDate(endDate);

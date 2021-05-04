@@ -1,5 +1,6 @@
 package com.Contracts;
 
+import java.sql.Date;
 import java.util.Calendar;
 
 public class MobilePhoneContract extends Contract{
@@ -8,6 +9,18 @@ public class MobilePhoneContract extends Contract{
     private int amountOfTraffic;
 
     public MobilePhoneContract(int id, Calendar startDate, Calendar endDate, int number, Person owner,
+                               int numberOfMinutes, int numberOfSMS, int amountOfTraffic){
+        setId(id);
+        setStartDate(startDate);
+        setEndDate(endDate);
+        setNumber(number);
+        setOwner(owner);
+        setNumberOfMinutes(numberOfMinutes);
+        setNumberOfSMS(numberOfSMS);
+        setAmountOfTraffic(amountOfTraffic);
+    }
+
+    public MobilePhoneContract(int id, Date startDate, Date endDate, int number, Person owner,
                                int numberOfMinutes, int numberOfSMS, int amountOfTraffic){
         setId(id);
         setStartDate(startDate);
