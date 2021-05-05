@@ -2,21 +2,36 @@ package com.Contracts;
 
 import org.apache.log4j.Logger;
 
+import javax.xml.bind.annotation.*;
 import java.lang.String;
 import java.sql.*;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Objects;
 
+@XmlRootElement(name = "person")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Person {
 
     private static Logger logger = Logger.getLogger(Person.class);
 
+    @XmlAttribute(name = "personId")
     int id;
+
+    @XmlAttribute(name = "personFio")
     String fio;
+
+    @XmlAttribute(name = "personBirthDate")
     Calendar birthDate;
+
+    @XmlAttribute(name = "personGender")
     Gender gender;
+
+    @XmlAttribute(name = "personPassportSeriesAndNumber")
     int passportSeriesAndNumber;
+
+    public Person() {
+    }
 
     public Person(int id, String fio, Calendar birthDate, Gender gender, int passportSeriesAndNumber){
         setId(id);

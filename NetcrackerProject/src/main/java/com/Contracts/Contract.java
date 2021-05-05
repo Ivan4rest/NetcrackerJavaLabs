@@ -1,14 +1,22 @@
 package com.Contracts;
 
+import JAXB.ContractXmlAdapter;
+
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.sql.Date;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+@XmlJavaTypeAdapter(ContractXmlAdapter.class)
 public abstract class Contract{
     private int id;
+
     private Calendar startDate;
+
     private Calendar endDate;
+
     private int number;
+
     private Person owner;
 
     public Contract(){

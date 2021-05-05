@@ -4,6 +4,7 @@ import Reflection.AutoInjectable;
 import Sorters.ISorter;
 import org.apache.log4j.Logger;
 
+import javax.xml.bind.annotation.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,20 +12,26 @@ import java.sql.SQLException;
 import java.util.Comparator;
 import java.util.function.Predicate;
 
+@XmlRootElement(name = "repository")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Repository {
     private static Logger logger = Logger.getLogger(Repository.class);
 
     @AutoInjectable
+    @XmlTransient
     ISorter sorter;
 
     /**
      * Array containing contracts
      */
+    @XmlElement(name = "contract")
+    @XmlElementWrapper
     private Contract[] contracts;
 
     /**
      * The last index of array
      */
+    @XmlAttribute
     private int lastIndex = -1;
 
     /**

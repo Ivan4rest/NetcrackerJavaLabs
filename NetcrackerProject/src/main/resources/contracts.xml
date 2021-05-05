@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<repository lastIndex="5">
+    <contracts>
+        <contract contractId="1" contractStartDate="1996-01-23T00:00:00+03:00" contractEndDate="2002-05-05T00:00:00+04:00" contractNumber="12334" contractNumberOfMinutes="5" contractNumberOfSMS="5" contractAmountOfTraffic="5" contractConnectionSpeed="0">
+            <contractOwner personId="1" personFio="Иванов Иван Иванович" personBirthDate="1999-01-10T00:00:00+03:00" personGender="MALE" personPassportSeriesAndNumber="123"/>
+        </contract>
+        <contract contractId="2" contractStartDate="1999-01-10T00:00:00+03:00" contractEndDate="2001-07-25T00:00:00+04:00" contractNumber="12334" contractNumberOfMinutes="5" contractNumberOfSMS="5" contractAmountOfTraffic="5" contractConnectionSpeed="0">
+            <contractOwner personId="1" personFio="Иванов Иван Иванович" personBirthDate="1999-01-10T00:00:00+03:00" personGender="MALE" personPassportSeriesAndNumber="123"/>
+        </contract>
+        <contract contractId="3" contractStartDate="1997-03-15T00:00:00+03:00" contractEndDate="1999-08-03T00:00:00+04:00" contractNumber="12334" contractNumberOfMinutes="0" contractNumberOfSMS="0" contractAmountOfTraffic="0" contractConnectionSpeed="5">
+            <contractOwner personId="1" personFio="Иванов Иван Иванович" personBirthDate="1999-01-10T00:00:00+03:00" personGender="MALE" personPassportSeriesAndNumber="123"/>
+        </contract>
+        <contract contractId="4" contractStartDate="1996-01-23T00:00:00+03:00" contractEndDate="1999-08-03T00:00:00+04:00" contractNumber="12334" contractNumberOfMinutes="0" contractNumberOfSMS="0" contractAmountOfTraffic="0" contractConnectionSpeed="5">
+            <contractOwner personId="1" personFio="Иванов Иван Иванович" personBirthDate="1999-01-10T00:00:00+03:00" personGender="MALE" personPassportSeriesAndNumber="123"/>
+        </contract>
+        <contract contractId="5" contractStartDate="1999-01-10T00:00:00+03:00" contractEndDate="1999-08-03T00:00:00+04:00" contractNumber="12334" contractNumberOfMinutes="0" contractNumberOfSMS="0" contractAmountOfTraffic="0" contractConnectionSpeed="0">
+            <contractOwner personId="1" personFio="Иванов Иван Иванович" personBirthDate="1999-01-10T00:00:00+03:00" personGender="MALE" personPassportSeriesAndNumber="123"/>
+            <channelPackages>
+                <contractChannelPackage>HBO</contractChannelPackage>
+                <contractChannelPackage>FOX</contractChannelPackage>
+                <contractChannelPackage>abc</contractChannelPackage>
+                <contractChannelPackage>NBC</contractChannelPackage>
+                <contractChannelPackage>CNN</contractChannelPackage>
+            </channelPackages>
+        </contract>
+        <contract contractId="6" contractStartDate="1999-01-10T00:00:00+03:00" contractEndDate="2001-07-25T00:00:00+04:00" contractNumber="12334" contractNumberOfMinutes="0" contractNumberOfSMS="0" contractAmountOfTraffic="0" contractConnectionSpeed="0">
+            <contractOwner personId="1" personFio="Иванов Иван Иванович" personBirthDate="1999-01-10T00:00:00+03:00" personGender="MALE" personPassportSeriesAndNumber="123"/>
+            <channelPackages>
+                <contractChannelPackage>HBO</contractChannelPackage>
+                <contractChannelPackage>FOX</contractChannelPackage>
+                <contractChannelPackage>abc</contractChannelPackage>
+                <contractChannelPackage>NBC</contractChannelPackage>
+                <contractChannelPackage>CNN</contractChannelPackage>
+            </channelPackages>
+        </contract>
+    </contracts>
+</repository>
